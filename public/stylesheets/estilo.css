@@ -1,0 +1,346 @@
+/* font-family: 'Urbanist', sans-serif;*/
+
+/*
+
+*{
+    margin: 0;
+    padding: 0;
+}
+*/
+body{
+font-family: 'Urbanist', sans-serif;
+font-size: 16px;
+line-height: 20px;
+}
+header{
+    background-color:#0d1770;
+    padding-top: 3px;
+    height: 76px;
+   
+    
+}
+
+.audio audio{
+    margin-bottom:  10px;
+}
+.audio img{
+    border-radius: 100%;
+    border-color: white;
+    border:solid 3px white;
+}
+header h1 {
+    color: white;
+    font-size: 1rem;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    bottom: 31px;
+    
+}  
+
+header h1 .nombre_Marisa{
+    color: white;
+    font-size: 1rem;
+    font-style: normal;
+    display: inline-block;
+    position: relative;
+    
+    
+}
+nav div{
+    background-color:rgb(157, 104, 207);
+    display: flex;
+    justify-content: space-around;
+    font-style: italic;
+}
+.iconos_menu{
+    background-color: black;
+    align-content: flex-end;
+    width: 60px;
+    background-color:#0d1770;
+    
+    
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    
+}
+nav a:hover{
+    color:brown;
+}
+footer{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+    background-color:plum;
+   
+}
+.columnas{
+    display: flex;
+    
+}
+/** INICIO */
+
+.linkRadio{
+    text-decoration:none;
+    color: white;
+   
+}
+
+.linkradio{
+    margin-left: 5px;
+}
+
+.foto_quien img{
+    margin-top: 0px;
+    
+}
+.quien{
+   
+    margin-left: 10px;
+    margin-top: 0px;
+    
+    text-align: justify;
+    margin-right: 10px;
+    font-size: 12px;
+    font-style: bolder;
+    color: white;
+}
+/*MI PROGRAMA*/
+
+.columnasmp {
+   display: flex;
+   font-size: 12px;
+   box-sizing: border-box;
+}
+.programacion :hover{
+    color: brown;
+
+}
+/*
+.programacion img{
+    margin-top: 0px;
+    padding-top: 0%;
+    margin-bottom: 0px;
+    padding-bottom: 0%;
+
+
+.vermiprograma :hover{
+    color:brown;
+    
+}
+.vermiprograma {
+    text-decoration: none;
+}
+.vermiprograma a h2 {
+    margin-top: 130px;
+    margin-left: 5px;
+    color: white;
+}*/
+.programas_anteriores{
+    display: flex;
+}
+
+.programa_5_7 video{
+    width: 478px;
+    height: 343px;
+    
+    
+}
+.fotoprograma0507{
+    margin-left: 14px;
+}
+.programa_5_7 h2{
+    color:white;
+    font-size: 13px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.programa_5_7 p{
+    color: white;
+    font-size: 13px;
+    margin-left: 10px;
+    font-family: italic;
+    margin-top: 40px;
+}
+
+.programa  h2{
+    margin-top: 2px;
+    color: white;
+    font-size: 12px;
+    width: 230px;
+    text-align: justify;
+    flex-direction: column;
+}
+.linkprogramacion{
+    text-decoration: none;
+    color: white;
+    margin-left: 13px;
+    
+}
+.linkprogramacion :hover{
+    color: brown;
+}
+.linkprogramacion figcaption{
+    margin-left: 13px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* COLABORADORES*/
+
+.fotogrande{
+    background-color: #02051f;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.fotogrande img:hover{
+    filter: grayscale(1%);
+    transform: rotate(7deg);
+}
+
+.fotoscolaboradores{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin-left: 335px;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+.colaborador1{
+   margin-right: 40px;
+   
+}
+    
+.colaborador1 h5{
+    margin-top: 0px;
+}
+.colaborador2{
+    margin-right: 40px;
+    
+}
+.colaborador2 h5{
+    margin-top: 0px;
+}
+.colaborador3 h5{
+    margin-top: 0px;
+
+}
+
+/* NOVEDADES */
+.padrecontacto{
+    display: flex;
+}
+.contactoradio{
+    flex-direction: column;
+}
+.novedades h2{
+    color: white;
+    text-align: center;
+}
+.novedades ul  ol{
+   color: white;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+
+/* CONTACTO*/
+
+ .padrecontacto{
+    display: flex;
+    box-sizing:border-box ;
+    
+ }
+ .contactoradio{
+    width: 400px;
+     
+ }
+ 
+ .contactoradio ol{
+    flex-direction: column;
+    color: white;
+    margin-top: 20px;
+    
+ }
+ .contactoradio h2{
+    text-align: justify;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 20px;
+ } 
+
+ .contactoradio ul :hover{
+    color: brown;
+ }
+ .contactoMarisa{
+    width: 500px;
+    flex-direction: column;
+ } 
+ .contactoMarisa h2{
+    color: white;
+    margin-left: 50px;
+    text-align: justify;
+    width: 430px;
+ }
+ 
+ label{
+    font-size: 13px;
+    margin-top: 3px;
+    margin-left: 8px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    margin-left: 50px;
+    color: white;
+}
+input[type=text]{
+    border: 0;
+    border-bottom: 1px solid  #90a378;;
+    padding: 15px;
+    background-color: white;
+    
+}
+input[type=email]{
+    border: 0;
+    border-bottom: 1px solid  #90a378;;
+    padding: 15px;
+    background-color: white;
+}
+textarea{
+    border: 0;
+    border-bottom: 1px solid  #90a378;
+    padding: 19px;
+    background-color: white;
+}
+
+
+button{
+    width: 100px;
+    text-align: center;
+    padding: 8px 10px;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    margin-top: 5px;
+
+}
+button a:hover{
+    color: gold;
+}
+.bi-arrow-right-short{
+    color: white;
+}

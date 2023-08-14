@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudad_Inquieta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Merienda&family=Oleo+Script&family=Poppins:wght@100;600&family=Urbanist:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/stylesheets/estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <div class="holder">
+            <div class="audio">
+                <img src="images/logo_radio_chico.jpg"><audio src="images/Presentación_programa.mp3"
+                    alt="audio_inicioPrograma" controls=""></audio>
+
+
+                <h1><span class="nombre_Marisa">Marisa MATTA en</span> Ciudad Inquieta...<span>RBD-Radio</span></h1>
+            </div>
+
+        </div>
+
+    </header>
+
+    <nav>
+        <div class="holder">
+            <a class="{{#if isInicio}}activo{{/if}}" href="/">INICIO</a>
+            <a class="{{#if isMiprograma}}activo{{/if}}" href="/miprograma">MI PROGRAMA</a>
+            <a class="{{#if isColaboradores}}activo{{/if}}" href="/colaboradores">COLABORADORES</a>
+            <a class="{{#if isNovedades}}activo{{/if}}" href="/novedades">NOVEDADES</a>
+            <a class="{{#if isContacto}}activo{{/if}}" href="/contacto">CONTACTO</a>
+
+            <div class="iconos_menu">
+                <a href="http://instagram.com/ciudadinquieta" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="http://www.facebook.com/ciudadinquieta" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="http://wa.me/+5491127204137" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="holder">
+        <div>
+            <a class="linkRadio" href="https://rbdradio.com.ar/" target="_blank">
+                <img src="images/atardecer - copia.jpg" alt="foto_ciudad">
+                <figcaption class="linkradio">link RBD-Radio</figcaption>
+            </a>
+
+        </div>
+        <div class="columnas">
+            <div class="foto_quien">
+                <img src="images/Marisa1.jpg" alt="foto_quien">
+            </div>
+
+            <div class="quien">
+                <h2>QUIEN SOY</h2>
+                <div>
+                    <ul>
+                        <li>Soy Marisa MATTA profesional en Ciencias Económicas con una destacada trayectoria en temas
+                            fiscales tanto en el ámbito laboral como en la docencia universitaria. A ello se ha sumado
+                            mi interés por la actividad gremial, ámbito en el que he participado activamente.</li><br>
+
+                        <li>Con ese bagaje en manos, de experiencia laboral, docente, cultural y gremial nace CIUDAD
+                            INQUIETA, el programa radial que coordino en RBD Radio.</li><br>
+
+                        <li>Una historia que comenzó en el 2016 junto a María Angélica, Luis Cortés y Ricardo Nieto en
+                            Radio CV.</li><br>
+
+                        <li>Más tarde se han agregado al programa otros colaboradores quienes periódicamente abordan
+                            diferentes temas de interés. Tal es el caso del Licenciado Nicolás Grosse, economía. El
+                            contador Luis Cortés, espectáculos. El Ingeniero Leopoldo Gimeno, tango. Finalmente, el
+                            Contador Carlos Louit, historia nacional e internacional.</li><br>
+
+                        <li>Nos interesa hablar sobre la actualidad y hemos entrevistado a músicos, cantantes,
+                            escritores, guías turísticos y arqueólogos. Estamos centrados en aquellas personas que con
+                            su aporte enriquecen nuestra visión del país y del mundo.</li><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+ 
+
+    {{{body}}}
+
+    </main>
+
+    <footer>
+        <h4>Diseñado por Isabel MAGAN</h4>
+    </footer>
+
+  </body>
+</html>
