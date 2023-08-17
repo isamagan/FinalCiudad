@@ -32,11 +32,11 @@
 
     <nav>
         <div class="holder">
-            <a class="" href="">INICIO</a>
-            <a class="" href="#iraMIPROGRAMA">MI PROGRAMA</a>
-            <a class="" href="#iraCOLABORADORES">COLABORADORES</a>
-            <a class="" href="#iraNOVEDADES">NOVEDADES</a>
-            <a class="" href="#iraCONTACTO">CONTACTO</a>
+            <a class="{{#if isInicio}}activo{{/if}}" href="">INICIO</a>
+            <a class="{{#if isMiprograma}}activo{{/if}}" href="#iraMIPROGRAMA">MI PROGRAMA</a>
+            <a class="{{#if isColaboradores}}activo{{/if}}" href="#iraCOLABORADORES">COLABORADORES</a>
+            <a class="{{#if isNovedades}}activo{{/if}}" href="#iraNOVEDADES">NOVEDADES</a>
+            <a class="{{#if isContacto}}activo{{/if}}" href="#iraCONTACTO">CONTACTO</a>
 
             <div class="iconos_menu">
                 <a href="http://instagram.com/ciudadinquieta" target="_blank"><i class="bi bi-instagram"></i></a>
