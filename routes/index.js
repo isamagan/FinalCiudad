@@ -24,7 +24,7 @@ var obj={
 }
 
 
-var ciudadinquieta=nodemailer.createCiudadinquieta({
+var ciudadinquieta=nodemailer.createTransport({
 host:process.env.SMTP_HOST,
 port:process.env.SMTP_PORT,
   auth:{
@@ -43,4 +43,5 @@ res.render('index',{
 
 
 module.exports = router;
+
 
