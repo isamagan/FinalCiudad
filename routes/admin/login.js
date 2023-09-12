@@ -8,6 +8,17 @@ router.get('/',function(req, res,next){
     });
 });
 
+router.post('/', asyn(req, res,next) =>{
+    try{
 
+        var usuario = req.body.usuario;
+        var password = req.body.password;
+        console.log(req.body);
+
+        var data = await usuariosModel.getUserByUsernameAndPassword(usuario.password);
+    }
+}
+
+)
 
 module.exports=router;
