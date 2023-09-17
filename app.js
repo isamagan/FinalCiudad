@@ -17,6 +17,7 @@ var colaboradoresRouter=require('./routes/colaboradores');
 var novedadesRouter=require('./routes/novedades');
 var contactoRouter=require('./routes/contacto');
 var loginRouter= require('./routes/admin/login');
+var adminRouter= require('./routes/admin/novedades');
 
 var app = express();
 
@@ -40,6 +41,7 @@ app.use('/colaboradores',colaboradoresRouter);
 app.use('/novedades',novedadesRouter);
 app.use('/contacto',contactoRouter);
 app.use('/admin/login', loginRouter);
+app.use('/admin/novedades',adminRouter);
 
 
 

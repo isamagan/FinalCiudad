@@ -1,5 +1,5 @@
-var mysql= requiere('mysql');
-var util= requiere('util');
+var mysql= require('mysql');
+var util= require('util');
 
 var pool= mysql.createPool({
     connectionLimit: 10,
