@@ -8,17 +8,26 @@ router.get('/',function(req, res,next){
     });
 });
 
+router.get('/logout', function (req,res,next){
+    req.session.destroy();//destruir las variables de sesión (id y usuario)
+    res.render('admin/login',{
+        layout: 'admin/layout'
+    });
+});
+
 router.post('/', async(req, res,next) =>{
     try{
 
-        var usuario = req.body.usuario;
+        var usuarios = req.body.usuario;
         var password = req.body.password;
-       // console.log(req.body);
+       console.log(req.body);
 
-        var data = await usuariosModel.getUserByUsernameAndPassword(usuario,password);
+        var data = await usuariosModel.getUserByUsernameAndPassword(usuarios,password);
 
 
         if (data != undefined){
+            req.session.id_usuario = data.id;
+            req.session.nombre = data.usuarios;
             res.redirect('/admin/novedades');
         }else{
             res.render('admin/login',{
@@ -26,8 +35,8 @@ router.post('/', async(req, res,next) =>{
                 error:true
             });
         }
-    }catch(error){
-       //console.log(error);
+    } catch(error){
+       console.log(error);
 
     }
 
