@@ -63,14 +63,22 @@
     </div>
 
 </section>
-<hr>
+<hr style="color:blue">
 <section class="novedades" id="iraNOVEDADES">
-
+<h2 style="color:white">NOVEDADES</h2>
+{{#each novedades}}
     <div>
-        <h2>PARA VER NOVEDADES INGRESA TUS DATOS</h2>
+        <h3 style="color:white">{{titulo}}</h3>
+        <h4 style="color:white">{{subtitulo}}</h4>
+        <p style="color:white">{{cuerpo}}</p>
+    <hr style="color:cadetblue">
     </div>
+
+{{/each}}
 </section>
-<hr>
+
+
+
 <section class="contacto" id="iraCONTACTO">
 
     <div class="padrecontacto">
